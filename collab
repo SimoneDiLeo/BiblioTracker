@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-[#0d141c]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">Research Hub</h2>
+            </div>
+            <div class="flex items-center gap-9">
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Dashboard</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Profile</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Projects</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Publications</a>
+              <a class="text-[#0d141c] text-sm font-medium leading-normal" href="#">Collaborators</a>
+            </div>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                <div
+                  class="text-[#49739c] flex border-none bg-[#e7edf4] items-center justify-center pl-4 rounded-l-lg border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Search"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141c] focus:outline-0 focus:ring-0 border-none bg-[#e7edf4] focus:border-none h-full placeholder:text-[#49739c] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjnhSzSSODODh39yucc68PoHuLk4PsS6LM4yRipCzwOtGmQvRUBXuf3tgHKiR0T1k8ES2sw3ETbxbWyErNbtk4-VQiqHNqBJOBrpKYvR9J0ughrwvTGpW8LBwIeyNqTZwKLBQDtBqn0TSsT-vo76djgz-nWTcnI2wNAKOplNS4wkK-G60OnyOt6IiF2diaojKO0tHKNjkXTIBgG4ulYpNvEfq0OBtXyeoD7LmVyuhdY5Etv13GqReRz4BzTtDJNw_iTgvio71IEow");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight">Potential Collaborators</p>
+                <p class="text-[#49739c] text-sm font-normal leading-normal">
+                  Based on your research interests, we've identified potential collaborators who may be a good fit for your work.
+                </p>
+              </div>
+            </div>
+            <h3 class="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Suggested Collaborators</h3>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#0d141c] text-base font-bold leading-tight">Dr. Amelia Chen</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Professor of Biomedical Engineering, Stanford University</p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Profile</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYFr8gQ95TGkVFe1NrKcSJUz7Pf1E5Hpp31mX9mtgLzC589zyKjCBuNoMLOXJshAjgGqoltuZ7k-mD9AC7pjapQnNP2vgnP1KSdiVXabaYB4E-HL-sGdSzTJU1rYNIvgjFLREYjg1qNYfQskdG2VWgYQvyztbztcQJyev5LPKYUL60ZROpWbP-8DtR6LQDwlX6vkj7uJCVV2s48facMg-1ax46ixiM_68qBFs8RlgijFGEJHa4aUVYnNm-H1I8I--L0No-jtYtqcQ");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#0d141c] text-base font-bold leading-tight">Dr. Ethan Ramirez</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Associate Professor of Neuroscience, University of California, Berkeley</p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Profile</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpn9-znOuq8BbgPetONbxJnWGAthLJJkiZr36l0k4VP2afT3-j0O7m8wR4t3Y9QOuocIs9Cs5mvFg0ROc-RfRb_AGwMVmxKOK7niUtXOLoBZsc9gMVF7xMRdZ9erdCKw2eDYnP2YIGT430BjTRlCBRqluzo9QhtQaxJMTdRDZ7hz1sMX_MIs9Rjn4ouZbvc7dB5jV6L-977X9Ov_2uJNBo4jMo2U-klKhRwkF4p9AdEac-BA7derzE9P4XSxpgCn-LvZDZhdKiBzM");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#0d141c] text-base font-bold leading-tight">Dr. Olivia Bennett</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Research Scientist, Massachusetts Institute of Technology</p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Profile</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8k8FWq2zRjAyZLTwjWHbLw4UKPKh3YaYJR9PMpI2n5baocWpzoOFYljiLL_wTcJQHtXafb1RrnVPPJjjfL1WqFjKubFUvMtsQahIsXYZ92NyQQL3RnMEIfWfxnVkJxwmzET5Q0t0u48Qo8QyA0SrwY2rjrQSYpcfaj-DhdNUxzfQxT1tMOTxVkSJk24de10XkbmE238GdD9QNOzi52sANOpn7QYmDSaQRrZeXe_7lQ52J_9-vc1UQ4fO1V-KpvJUpJXxH2FizZVg");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#0d141c] text-base font-bold leading-tight">Dr. Noah Carter</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Assistant Professor of Computer Science, Carnegie Mellon University</p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Profile</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB0YaNnf5UrKAJc2tlABE1HcG4m8van-MaG7NAeRMvHZXzv6Bqs_XRa_DPVwqEOUoSCTxmWyJSM7QoEbjLP309oq2KpVOXml-uy-K4HgYEvPpxOOd7zKL-bCdmvR7O3xFxsY-fqdkmtWNauf_NUjwTICz7Sm0LW06E98TOw6vq1UHDrjvOsE6aoBg5cIoIzdYa5i2BgUo3kR-xIgH2eGEY65iIJF13n_ZYCyvrpyFP81eXPUBYLEHg10jfu6Dj0dJd9R5SwvNggkQI");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-lg">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#0d141c] text-base font-bold leading-tight">Dr. Sophia Davis</p>
+                    <p class="text-[#49739c] text-sm font-normal leading-normal">Postdoctoral Fellow, Harvard University</p>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 flex-row-reverse bg-[#e7edf4] text-[#0d141c] text-sm font-medium leading-normal w-fit"
+                  >
+                    <span class="truncate">View Profile</span>
+                  </button>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCKtn2O2ePpKJ6otJPmxUhapZ6-OkX36qa_RL5wmPvt6Cd2gTQXqPmNV9OLeKPAd9CSbJL2OUREt_osC-OZkveXszRhFSsz-FXxDik2pFGP3GgJ9B6TTmeYAmp-UltbJtV4DfeM8V0WDHzwWyucxMOF2lUcU4G-79kFAEppUN4F8VMLsd8kCNr61sx8n2raoXFdv0FYamBHQ7Fi8kqKG9057gFjcnag-MZG8sLiNsZQmFaRU7m1O8vLgWbX32RzAv2EW9c6OV-lhlo");'
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
