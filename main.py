@@ -1,10 +1,16 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 
 # Importing database initialization function and router
 from database.database_setup import init_db
 from api import auth_routes # Assuming your router is named 'router' in auth_routes.py
 
 app = FastAPI()
+
+# Mount static files and initialize templates
+app.mount("/static", StaticFiles(directory="frontend/static"), name="static")
+templates = Jinja2Templates(directory="frontend/templates")
 
 # Event handler for application startup
 @app.on_event("startup")
@@ -35,5 +41,5 @@ from api import analysis_routes # New import
 app.include_router(analysis_routes.analysis_router) # Default prefix from the router itself (/api/analysis)
 
 @app.get("/")
-async def root():
-    return {"message": "Welcome to the Research Information System API"}
+async def read_root(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
